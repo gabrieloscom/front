@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Datos desde API</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+        <header>
+            
+            <h1>Ingresar datos</h1>
+            <label for="param1">Parámetro 1:</label>
+            <input type="text" id="param1" name="param1" required>
+            <br><br>
+    
+            <label for="param2">Parámetro 1:</label>
+            <input type="text" id="param2" name="param2" required>
+            <br><br>
+    
+            <label for="param3">Parámetro 3:</label>
+            <input type="text" id="param3" name="param3" required>
+            <br><br>
+            <button id="fetchButton">Cargar Datos</button>
+       
+        </header>
+<main>
+    <div class="container my-4">
+        <h1 class="text-center">Grilla</h1>
+        <table class="table table-bordered table-hover mt-4">
+            <thead class="thead-dark">
+                <tr id="table-headers">
+                    <!-- Los encabezados de la tabla se llenarán dinámicamente -->
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Las filas de la tabla se llenarán dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</main>
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+
